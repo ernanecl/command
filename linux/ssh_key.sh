@@ -12,7 +12,7 @@ $ ssh-keygen -t rsa
 
 # Retrieve(recupere) the public key file
 # When created, the key-pair can be found in your home directory's .ssh folder (assuming you generated the key with the default name id_rsa):
-/home/username/.ssh/id_rsa.pub
+$ cat /home/username/.ssh/id_rsa.pub
 
 # Provide the public key file (for example, id_rsa.pub) to your server administrator, so that it can be set up for your server connection.
 
