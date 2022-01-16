@@ -15,3 +15,8 @@ echo -e "content" >> file_name
 
 # creating file and inserting content without accessing it
 touch file_name && echo -e "content" >> file_name
+
+
+# change hostname
+# https://thomasdiego.com/como-alterar-nome-da-maquina-hostname-no-linux/
+# https://www.vivaolinux.com.br/topico/UbuntuBR/Como-mudar-o-nome-do-usuario-do-terminal
