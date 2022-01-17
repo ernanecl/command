@@ -1,6 +1,6 @@
-# comandos de leitura, escrita e execução de arquivos
+# commands for reading, writing and executing files
 
-# ver permissões de arquivos e diretórios
+# file and directory allow list
   ll
   ls -l
   ls -la
