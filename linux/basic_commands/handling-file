@@ -11,7 +11,7 @@
 # run shell file
   ./file_name.sh
 
-# creating or editing the file by accessing it
+# creating and editing the file by accessing it
   vim filename
   vi filename
 
