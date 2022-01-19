@@ -1,3 +1,4 @@
+# https://askubuntu.com/questions/615178/getting-the-default-text-editor-used-in-system
 # Change default text editor
 # First method:
 sudo update-alternatives --config editor
