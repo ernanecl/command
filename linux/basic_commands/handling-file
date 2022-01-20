@@ -5,10 +5,10 @@
   ls -l
   ls -la
 
-# give allow
+# https://search.brave.com/search?q=how+to+run+shellscript+command+line&source=desktop
+# https://www.javatpoint.com/steps-to-write-and-execute-a-shell-script
+# give allow and run shell file
   chmod +x file_name.sh
-
-# run shell file
   ./file_name.sh
 
 # creating and editing the file by accessing it

@@ -1,0 +1,72 @@
+# https://docs.docker.com/engine/install/linux-postinstall/
+# Manage Docker as a non-root user
+# To create the docker group and add your user:
+
+# 1. Create the docker group.
+ sudo groupadd docker
+
+# 2. Add your user to the docker group.
+ sudo usermod -aG docker $USER
+
+# 3. Log out and log back in so that your group membership is re-evaluated.
+# If testing on a virtual machine, it may be necessary to restart the virtual machine for changes to take effect.
+# On a desktop Linux environment such as X Windows, log out of your session completely and then log back in.
+# On Linux, you can also run the following command to activate the changes to groups:
+ newgrp docker 
+
+# 4. Verify that you can run docker commands without sudo.
+ docker run hello-world
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+# Fixing error
+# If you initially ran Docker CLI commands using sudo before adding your user to the docker group,
+# you may see the following error, which indicates that your ~/.docker/ directory was created with incorrect permissions due to the sudo commands.
+ WARNING: Error loading config file: /home/user/.docker/config.json -
+ stat /home/user/.docker/config.json: permission denied
+
+# To fix this problem, either remove the ~/.docker/ directory (it is recreated automatically, but any custom settings are lost),
+# or change its ownership and permissions using the following commands:
+ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+ sudo chmod g+rwx "$HOME/.docker" -R
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+# Configure Docker to start on boot
+ sudo systemctl enable docker.service
+ sudo systemctl enable containerd.service
+
+# To disable this behavior, use disable instead.
+ sudo systemctl disable docker.service
+ sudo systemctl disable containerd.service
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+# Configuring remote access with systemd unit file
+# 1. Use the command sudo systemctl edit docker.service to open an override file for docker.service in a text editor.
+# 2. Add or modify the following lines, substituting your own values.
+ [Service]
+ ExecStart=
+ ExecStart=/usr/bin/dockerd -H fd:// -H tcp://127.0.0.1:2375
+
+# 3. Save the file.
+# 4. Reload the systemctl configuration.
+ sudo systemctl daemon-reload
+
+# 5. Restart Docker.
+ sudo systemctl restart docker.service
+
+# 6. Check to see whether the change was honored by reviewing the output of netstat to confirm dockerd is listening on the configured port.
+ sudo netstat -lntp | grep dockerd
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------#
+# Configuring remote access with daemon.json
+# 1. Set the hosts array in the /etc/docker/daemon.json to connect to the UNIX socket and an IP address, as follows:
+{
+  "hosts": ["unix:///var/run/docker.sock", "tcp://127.0.0.1:2375"]
+}
+
+# 2. Restart Docker.
+# 3. Check to see whether the change was honored by reviewing the output of netstat to confirm dockerd is listening on the configured port.
+ sudo netstat -lntp | grep dockerd
