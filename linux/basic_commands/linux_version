@@ -1,3 +1,4 @@
+# https://www.tecmint.com/find-linux-kernel-version-distribution-name-version-number/
 # To find out which version of Linux kernel you are running, type:
 uname -or
 
