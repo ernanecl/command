@@ -1,0 +1,2 @@
+# find the network gateway
+    route -n
