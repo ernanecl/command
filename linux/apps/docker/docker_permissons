@@ -1,0 +1,10 @@
+# https://www.marceloweb.info/docker-e-permissoes-docker-daemon-socket/
+# Problem running Docker when not have permission
+# Create Docker group
+    sudo groupadd docker
+
+# Add current user to Docker group
+    sudo usermod -aG docker $USER
+
+# Log out and log back in, then run the following command to test
+    docker run hello-world
