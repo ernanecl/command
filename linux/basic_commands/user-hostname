@@ -8,6 +8,10 @@
     passwd <username>
     sudo passwd # not tested
 
+# https://www.ehow.com.br/configurar-conta-usuario-root-linux-mint-como_50430/
+# create root password
+    sudo passwd root
+
 # view and change hostname
     systemctl status
     systemctl set-histname <new_hostname>
@@ -18,3 +22,4 @@
 
 # log in to the remote server using ssh
     ssh user@sever-name
+
