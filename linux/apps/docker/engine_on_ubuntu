@@ -1,4 +1,5 @@
 # https://docs.docker.com/engine/install/ubuntu/
+# https://linuxhint.com/install_docker_linux_mint/
 # Uninstall old versions
   sudo apt-get remove docker docker-engine docker.io containerd runc
 
@@ -11,8 +12,19 @@
     gnupg \
     lsb-release
 
+# Another option
+  sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
 # 2. Add Docker’s official GPG key:
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Another option
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 # 3. Use the following command to set up the stable repository. To add the nightly or test repository, add the word nightly or test (or both) after the word stable in the commands below.
   echo \

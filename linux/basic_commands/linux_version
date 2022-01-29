@@ -1,23 +1,24 @@
 # https://www.tecmint.com/find-linux-kernel-version-distribution-name-version-number/
+# https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/
 # To find out which version of Linux kernel you are running, type:
-uname -or
+    uname -or
 
 # Can also use -a option with uname command to print all system information as shown:
-uname -a
+    uname -a
 
 # Simply type the command below to display some of your system information including the Linux kernel version:
-cat /proc/version
+    cat /proc/version
 
 # Find Out Linux Distribution Name and Release Version
 # The best way to determine a Linux distribution name and release version information is using cat /etc/os-release command, which works on almost all Linux system.
 # On Debian Linux
-cat /etc/debian-release
+    cat /etc/debian-release
 
 # On Linux Mint and Ubuntu
-cat /etc/lsb-release
+    cat /etc/lsb-release
 
 # On CentOS Linux
-cat /etc/centos-release
+    cat /etc/centos-release
 
 # On Fedora Linux
-cat /etc/fedora-release
+    cat /etc/fedora-release
