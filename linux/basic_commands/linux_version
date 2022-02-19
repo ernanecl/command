@@ -22,3 +22,16 @@
 
 # On Fedora Linux
     cat /etc/fedora-release
+
+# https://linuxconfig.org/how-to-check-ubuntu-version
+# Method 1: See Ubuntu-based version of Linux
+    hostnamectl
+
+# Method 2: Another way to see this same information is by viewing the /etc/issue file
+    cat /etc/issue
+
+# Method 3: Another file you can check is the /etc/os-release file
+    cat /etc/os-release
+
+# Method 4: Another way to see the version number is to execute the lsb_release command along with the -crid options
+    lsb_release -crid
