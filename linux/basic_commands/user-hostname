@@ -12,6 +12,7 @@
 # create root password
     sudo passwd root
 
+# https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
 # view and change hostname
     systemctl status
     systemctl set-histname <new_hostname>
