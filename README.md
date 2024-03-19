@@ -11,4 +11,5 @@ https://dicasdeinfra.com.br/novo-malware-linux-se-esconde-em-cron-jobs-com-datas
 
 ##### links:
 (português) https://www.atlassian.com/br/git/tutorials/undoing-changes
+
 (inglês) https://www.hostingadvice.com/how-to/git-rollback-commit/
