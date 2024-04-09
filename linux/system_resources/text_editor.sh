@@ -24,3 +24,8 @@ $ export EDITOR="$VISUAL"
 
 # can also use the following command inside ~/.bashrc
 $ alias edit=nano
+
+
+# "https://ioflood.com/blog/install-vim-command-linux/"
+$ sudo apt update
+$ sudo apt install vim
