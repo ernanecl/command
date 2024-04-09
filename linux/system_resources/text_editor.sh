@@ -1,7 +1,7 @@
-# https://askubuntu.com/questions/615178/getting-the-default-text-editor-used-in-system
+# "https://askubuntu.com/questions/615178/getting-the-default-text-editor-used-in-system"
 # Change default text editor
 # First method:
-  sudo update-alternatives --config editor
+$ sudo update-alternatives --config editor
 
 # This command show you the text editors. The one you are using has the * in front
 # Then just type the number referring to the text editor you want
@@ -15,12 +15,12 @@
 
 
 # Second method:
-  $ echo $EDITOR
-  /usr/bin/nano
+$ echo $EDITOR
+$ /usr/bin/nano
 
 # to set the default editor you can add the following to your shell configuration (~/.bashrc):
-  export VISUAL="/usr/bin/nano"
-  export EDITOR="$VISUAL"
+$ export VISUAL="/usr/bin/nano"
+$ export EDITOR="$VISUAL"
 
 # can also use the following command inside ~/.bashrc
-  alias edit=nano
+$ alias edit=nano
