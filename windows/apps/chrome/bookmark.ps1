@@ -7,7 +7,7 @@ pwd
 # access your user directory
 cd C:\Users\<username>
 
-# list all files in the user directory, alse can to use ls or dir commands
+# list all files in the user directory, you can also use ls or dir commands
 Get-ChildItem . -Force
 # or
 Get-ChildItem -Force
