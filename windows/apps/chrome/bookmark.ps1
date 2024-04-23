@@ -18,3 +18,6 @@ cd '.\AppData\Local\Google\Chrome\User Data\Default'
 # files bookmarks
 Bookmarks
 Bookmarks.bak
+
+
+# source: https://www.howtogeek.com/819125/where-are-google-chrome-bookmarks-stored-on-my-computer/
