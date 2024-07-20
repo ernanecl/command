@@ -25,3 +25,18 @@ $ sudo apt install brave-browser-nightly
 # Debian 9+, Ubuntu 16.04+ and Mint 18+ 
 $ sudo apt remove brave-browser brave-keyring
 $ sudo rm /etc/apt/sources.list.d/brave-browser-*.list
+
+
+####################################################################################################################################
+# Importing Brave bookmarks
+# https://community.brave.com/t/importing-old-brave-bookmarks/417394
+
+# place where Brave favorites are
+# Linux
+$ $HOME/.config/BraveSoftware/Brave-Browser/
+
+# Mac
+$ /Users/username/Library/Application Support/BraveSoftware/Brave-Browser/
+
+# Windows
+$ C:\Users\username\AppData\Local\BraveSoftware\Brave-Browser\
