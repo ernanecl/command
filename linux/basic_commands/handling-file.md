@@ -170,6 +170,9 @@ rm -rf Dir1 Dir2 Dir3
 &nbsp;
 
 Source used
+
 ```https://search.brave.com/search?q=how+to+run+`shell`script+command+line&source=desktop```
+
 ```https://www.javatpoint.com/steps-to-write-and-execute-a-`shell`-script```
+
 ```https://www.hostinger.com.br/tutoriais/como-deletar-arquivo-linux#:~:text=O%20comando%20usado%20para%20deletar%20diret%C3%B3rios%20vazios%20no%20Linux%20%C3%A9%20rmdir.&text=Se%20nenhuma%20op%C3%A7%C3%A3o%20for%20oferecida,pode%20te%20ajudar%20com%20isso.```

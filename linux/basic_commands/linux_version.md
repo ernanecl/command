@@ -87,5 +87,7 @@ lsb_release -crid
 Source used
 
 ```https://www.tecmint.com/find-linux-kernel-version-distribution-name-version-number/```
+
 ```https://www.cyberciti.biz/faq/how-to-check-os-version-in-linux-command-line/```
+
 ```https://linuxconfig.org/how-to-check-ubuntu-version```
