@@ -6,10 +6,7 @@ Release Channel Installation.
 
 `Debian 9+`, `Ubuntu 16.04+` and `Mint 18+`.
 
-
-
 &nbsp;
-
 
 ```BASH
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
@@ -23,7 +20,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 
 &nbsp;
 
-# update system and install browser
+update system and install browser
 
 ```BASH
 sudo apt update
@@ -33,12 +30,8 @@ sudo apt update
 sudo apt install brave-browser
 ```
 
-# Nightly Channel Installation 
-# Debian 9+, Ubuntu 16.04+ and Mint 18+
-
-```BASH
-sudo apt install curl
-```
+Nightly Channel Installation 
+`Debian 9+`, `Ubuntu 16.04+` and `Mint 18+`.
 
 ```BASH
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-nightly-archive-keyring.gpg https://brave-browser-apt-nightly.s3.brave.com/brave-browser-nightly-archive-keyring.gpg
