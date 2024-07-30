@@ -123,4 +123,5 @@ sudo snap install pycharm-community --classic
 
 Link:
 
+```https://www.jetbrains.com/help/pycharm/installation-guide.html#snap```
 ```https://snapcraft.io/install/pycharm-community/mint```
