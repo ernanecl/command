@@ -336,3 +336,7 @@ git branch | grep <padrão_branches>
 
 # exemplo
 git branch | grep <b1>
+
+Links:
+
+```https://git-scm.com/book/en/v2/Getting-Started-Installing-Git```

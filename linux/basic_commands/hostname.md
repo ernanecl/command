@@ -31,7 +31,7 @@ sudo vim /etc/hostname
 Finally, edit the `/etc/hosts` file, updating the `hostname` line:
 
 ```BASH
-vim nano /etc/hosts
+vim vim /etc/hosts
 ```
 
 From:
@@ -41,6 +41,7 @@ From:
 ```
 
 To:
+
 ```
 127.0.1.1   new-hostname
 ```
