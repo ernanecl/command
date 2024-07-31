@@ -5,33 +5,17 @@ Create `user` and grant it `sudo` privileges
 On `Debian`, `Ubuntu` or `Mint`:
 
 ```BASH
-sudo adduser <new_username>
+sudo adduser tempuser
 ```
 
 ```BASH
-sudo usermod -aG sudo <new_username>
-```
-
-&nbsp;
-
-On `Fedora`:
-
-```BASH
-sudo adduser <new_username>
-```
-
-```BASH
-sudo passwd <new_username>
-```
-
-```BASH
-sudo usermod -aG wheel <new_username>
+sudo usermod -aG sudo tempuser
 ```
 
 &nbsp;
 &nbsp;
 
-To change the `user password`, you need to create a `temporary user` with `sudo` privileges.
+To change the `username`, you need to create a `temporary user` with `sudo` privileges.
 
 Then you `log out` of the `current user` and `log in` with `temporary user` to change the `name`, `home directory` and `group` of the `user` you want to change.
 
@@ -80,6 +64,12 @@ The `chfn` command is not installed by default in `Fedora` to install it use the
 
 ```BASH
 sudo dnf install util-linux-user
+```
+
+Delete temporary user:
+
+```Bash
+sudo userdel -r tempuser
 ```
 
 &nbsp;
