@@ -19,7 +19,7 @@ cat /etc/hostname
 Enter the following commands:
 
 ```BASH
-sudo hostname new-server-name-here
+sudo hostname new-name-here
 ```
 
 Next, edit the `/etc/hostname` file, updating the `hostname`:
@@ -31,7 +31,7 @@ sudo vim /etc/hostname
 Finally, edit the `/etc/hosts` file, updating the `hostname` line:
 
 ```BASH
-vim vim /etc/hosts
+sudo vim /etc/hosts
 ```
 
 From:
